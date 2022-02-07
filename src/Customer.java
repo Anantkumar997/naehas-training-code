@@ -48,7 +48,7 @@ class Bank {			// Encapsulation
 				System.out.println("Insufficient Balance in your Acc.");
 			}
 		}else {
-			System.out.println("Password is Incurrect.");
+			System.out.println("Password is Incorrect.");
 		}
 	}
 	
@@ -84,7 +84,7 @@ public class Customer{
 				break;
 		case 3: obj.checkBalance();
 				break;
-		default:System.out.println("Incurrect choice.");
+		default:System.out.println("Incorrect choice.");
 			break;
 		}
 	}
