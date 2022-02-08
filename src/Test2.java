@@ -20,7 +20,7 @@ class maruti extends Test2{
 	public void speed() {
 		// TODO Auto-generated method stub
 		try {
-			Strig = "Ramesh"
+			String str = "Ramesh";
 				
 		} catch (Exception e) {
 			System.out.println("new Exception");

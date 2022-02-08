@@ -1,6 +1,4 @@
-
-
-abstract class Car{
+abstract class Car1{
 	
 	abstract void speed();
 	
@@ -9,7 +7,7 @@ abstract class Car{
 	}
 }
 
-class Test extends Car{
+class Test extends Car1{
 	@Override
 	void speed() {
 		
@@ -22,7 +20,9 @@ class Test extends Car{
 	}
 	
 	public static void main(String[] args) {
-		
+		Test t1 = new Test();
+		t1.speed();
+		t1.color();
 	}
 	
 	
