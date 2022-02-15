@@ -2,6 +2,7 @@ package ArrayLists;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 
 public class ArrayLists {
 
@@ -52,6 +53,14 @@ public class ArrayLists {
 		
 		Collections.sort(list);
 		System.out.println(list);
+		
+		// Iterator
+		
+		Iterator itr = list.iterator();
+		while(itr.hasNext()) {
+			int n = (int) itr.next();
+			System.out.println(n);
+		}
 
 	}
 
