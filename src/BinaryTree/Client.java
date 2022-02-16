@@ -10,6 +10,10 @@ public class Client {
 		bt.preOrder();
 		System.out.println();
 		bt.postOrder();
+		System.out.println();
+		bt.leftView();
+		System.out.println();
+		bt.rightView();
 	}
 
 }

@@ -1,5 +1,7 @@
 package BinaryTree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class BinaryTree {
@@ -104,6 +106,67 @@ public class BinaryTree {
 		postOrder(node.left);
 		postOrder(node.right);
 		System.out.print(node.data + " ");
+	}
+	
+	// leftview
+	public void leftView() {
+		leftView(root);
+	}
+	
+	private void leftView(Node node) {
+		if(node == null)
+			return;
+		
+		Queue<Node> q = new LinkedList<>();
+		q.add(node);
+		
+		while(!q.isEmpty()) {
+			int n = q.size();
+			
+			for(int i = 1; i <= n ; i++) {
+				
+				Node temp = q.poll();
+				
+				if(i == 1)
+					System.out.print(temp.data + " ");
+				
+				if(temp.left != null)
+					q.add(temp.left);
+				
+				if(temp.right != null)
+					q.add(temp.right);
+			}
+		}
+	}
+	
+	public void rightView() {
+		rightView(root);
+	}
+	
+	private void rightView(Node node) {
+		if(node == null)
+			return;
+		
+		Queue<Node> q = new LinkedList<>();
+		q.add(node);
+		
+		while(!q.isEmpty()) {
+			int n = q.size();
+			
+			for(int i = 1; i <= n ; i++) {
+				
+				Node temp = q.poll();
+				
+				if(i == n)
+					System.out.print(temp.data + " ");
+				
+				if(temp.left != null)
+					q.add(temp.left);
+				
+				if(temp.right != null)
+					q.add(temp.right);
+			}
+		}
 	}
 	
 }
